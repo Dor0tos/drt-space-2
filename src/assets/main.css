@@ -1,0 +1,13 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base{
+    * {
+        color: #2D2931;
+    }
+
+    h1 {
+        font-weight: 900;
+    }
+}
