@@ -2,12 +2,16 @@
 @tailwind components;
 @tailwind utilities;
 
-@layer base{
-    * {
-        color: #2D2931;
-    }
+@layer base {
+  * {
+    color: #2d2931;
+  }
 
-    h1 {
-        font-weight: 900;
-    }
+  h1 {
+    font-weight: 900;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
 }
