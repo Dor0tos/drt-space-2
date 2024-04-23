@@ -12,8 +12,11 @@
     "type-check": "vue-tsc --build --force"
   },
   "dependencies": {
+    "@formkit/auto-animate": "^0.8.2",
+    "@supabase/supabase-js": "^2.42.5",
     "pinia": "^2.1.7",
-    "vue": "^3.4.21"
+    "vue": "^3.4.21",
+    "vue-router": "^4.3.2"
   },
   "devDependencies": {
     "@tsconfig/node20": "^20.1.4",

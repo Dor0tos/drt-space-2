@@ -1,15 +1,14 @@
-<script setup lang="ts"></script>
+<script setup lang="ts">
+import IconLogo from "./icons/IconLogo.vue";
+</script>
 
 <template>
   <header class="h-svh pb-[60px] -mb-[90px]">
     <div
-      class="bg-space-accent bg-pattern border-b-4 place-content-between border-space-black h-full flex flex-row items-center px-40"
+      class="bg-space-accent bg-pattern select-none border-b-4 border-space-black h-full flex items-center justify-center px-40"
     >
       <div>
-        <h1 class="text-8xl">Привет!<br />Я Dorotos</h1>
-        <p class="font-play text-3xl font-bold mt-5">
-          {Придумать подзаголовок...}
-        </p>
+        <IconLogo class="animate-sine" />
       </div>
     </div>
   </header>
