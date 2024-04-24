@@ -8,7 +8,6 @@ const arts = ref([] as any);
 async function getProjects() {
   const { data } = await supabase.from("arts").select();
   arts.value = data;
-  console.log("Arts > ", arts.value);
 }
 
 onMounted(() => {
@@ -17,7 +16,7 @@ onMounted(() => {
 </script>
 
 <template>
-  <main class="w-full flex flex-wrap justify-between gap-2">
+  <main class="w-full flex flex-wrap justify-between gap-2 sm:px-0 px-10">
     <ImageCard
       v-for="art in arts"
       :title="art.name"

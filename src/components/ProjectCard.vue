@@ -21,19 +21,19 @@ const thumbColor = reactive({
 
 <template>
   <section
-    class="w-full h-[400px] bg-space-main rounded-[15px] border-4 border-space-black flex flex-col font-play shadow-comic mx-auto"
+    class="w-full text-xs md:text-lg xl:text-xl  h-[275px] sm:h-[400px] bg-space-main sm:rounded-[15px] sm:border-x-4 border-y-4 border-space-black flex flex-col font-play sm:shadow-comic mx-auto"
   >
     <header
-      class="h-10 px-8 border-b-[3px] border-space-black items-center flex flex-row font-semibold flex-shrink-0"
+      class="py-2 px-8 border-b-[3px] border-space-black items-center flex flex-row font-semibold flex-shrink-0"
     >
       Создание {{ title }}
     </header>
     <div class="p-8 items-center flex flex-row gap-4 grow">
       <aside
-        class="h-full w-[170px] flex-shrink-0 rounded-[10px] border-[3px] border-space-black hidden lg:flex items-center justify-center"
+        class="h-full w-[100px] sm:w-[170px] flex-shrink-0 rounded-[10px] border-[3px] border-space-black flex items-center justify-center"
         :class="thumbColor"
       >
-        <img class="h-full" :src="img_url" />
+        <img class="h-full object-top object-scale-down" :src="img_url" />
       </aside>
       <main class="h-full grow flex flex-col place-content-between">
         <section>
@@ -44,7 +44,7 @@ const thumbColor = reactive({
       </main>
     </div>
     <footer
-      class="h-10 px-8 border-t-[3px] border-space-black items-center flex flex-row gap-2 flex-shrink-0"
+      class="py-2 px-8 border-t-[3px] border-space-black items-center flex flex-row gap-2 flex-shrink-0"
     >
       <span v-for="skill in skills" class="underline">{{ skill }}</span>
     </footer>

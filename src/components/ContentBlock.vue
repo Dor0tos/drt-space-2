@@ -21,7 +21,7 @@ const props = defineProps({
 </script>
 
 <template>
-  <div class="mt-28 mb-[80px]" ref="dropdown">
+  <div class="mt-28 mb-[80px]">
     <div class="relative -top-[220px]" :id="props.id" />
     <Title
       @collapse="states.collapsed = !states.collapsed"
@@ -40,13 +40,13 @@ const props = defineProps({
       >{{ props.title }}</ClosedChapter
     >
     <main
-      class="mt-[-80px] overflow-hidden mx-auto border-space-black transition-all dropdown-content"
+      class="mt-[-60px] 2xl:mt-[-80px] overflow-hidden mx-auto border-space-black transition-all dropdown-content"
       :class="{
         'h-0 border-y-0 pt-0': states.collapsed || states.closed,
         'border-y-4 pt-[60px]': !states.collapsed && !states.closed,
       }"
     >
-      <div class="w-3/5 mx-auto h-fit">
+      <div class="full px-0 sm:px-10 2xl:px-0 2xl:w-3/5 mx-auto h-fit">
         <slot></slot>
       </div>
     </main>

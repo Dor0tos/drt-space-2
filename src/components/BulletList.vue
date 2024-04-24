@@ -18,7 +18,7 @@ const props = defineProps({
     <h6 class="font-bold">{{ props.title }}</h6>
     <ul>
       <li v-for="item in $props.items" class="flex flex-row gap-1 items-center">
-        <A :href="item.link" class="underline font-play">{{ item.text }}</A>
+        <a :href="item.link" class="underline font-play">{{ item.text }}</a>
         <div class="opacity-75">
           <slot />
         </div>

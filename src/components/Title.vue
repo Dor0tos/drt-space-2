@@ -5,7 +5,7 @@ const emit = defineEmits(["collapse", "recover", "close"]);
 
 <template>
   <section
-    class="w-3/5 h-[80px] bg-space-accent rounded-[20px] relative top-[-40px] z-10 border-4 border-space-black flex flex-row text-center justify-center md:justify-normal items-center gap-8 px-12 mx-auto shadow-comic"
+    class="w-3/5 h-[60px] 2xl:h-[80px] bg-space-accent rounded-[20px] relative top-[-30px] 2xl:top-[-40px] z-10 border-4 border-space-black flex flex-row text-center justify-center md:justify-normal items-center gap-8 px-12 mx-auto shadow-comic"
   >
     <h2 class="font-play font-bold text-4xl"><slot></slot></h2>
     <div class="h-1 grow bg-space-black rounded-full hidden sm:block" />

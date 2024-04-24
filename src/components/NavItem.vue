@@ -12,9 +12,9 @@ const props = defineProps({
 });
 
 const buttonPositionStyle = reactive({
-  "rounded-l-[20px]": props.firstItem,
+  "rounded-l-[10px] 2xl:rounded-l-[20px]": props.firstItem,
   "border-l-0": props.middleItem || !(props.firstItem || props.lastItem),
-  "rounded-r-[20px] border-l-0": props.lastItem,
+  "rounded-r-[10px] 2xl:rounded-r-[20px]": props.lastItem,
 });
 </script>
 

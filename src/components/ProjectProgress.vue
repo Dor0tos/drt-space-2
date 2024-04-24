@@ -57,7 +57,7 @@ const progressColorClass = reactive({
 
 function getInProgressCellsCount() {
   if (props.progress == -1) {
-    progress_cells.value = Math.floor(Math.random() * 18 + 2);
+    progress_cells.value = Math.floor(Math.random() * 0 + 10);
   } else {
     progress_cells.value = props.progress;
   }
@@ -97,7 +97,7 @@ onMounted(() => {
       Текущее состояние:<br /><span class="font-bold">{{ progress_name }}</span>
     </h4>
     <div
-      class="w-full h-7 border-[3px] border-space-black rounded-[5px] flex flex-row gap-[2px] p-[2px] overflow-clip"
+      class="w-full h-10 border-[3px] border-space-black rounded-[5px] flex flex-row gap-[2px] p-[2px] overflow-clip"
     >
       <div
         class="h-full rounded-[2.5px]"

@@ -15,8 +15,8 @@ const props = defineProps({
   <section
     class="mb-10 rounded-[15px] flex flex-col font-play overflow-hidden shadow-xl flex-shrink-0"
     :class="{
-      'w-full  xl:w-[30%]': size == 1,
-      'w-full xl:w-[65%]': size == 2,
+      'w-full  sm:w-[30%]': size == 1,
+      'w-full sm:w-[65%]': size == 2,
       'w-full': size == 3,
     }"
   >
