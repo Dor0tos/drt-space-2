@@ -27,4 +27,5 @@ const router = createRouter({
 
 const app = createApp(App);
 app.use(router);
+app.provide("thin-width", 1024);
 app.mount("#app");

@@ -1,16 +1,5 @@
 <script setup lang="ts">
 import IconLogo from "./icons/IconLogo.vue";
-import { onMounted } from 'vue';
-
-function onScroll(e : any){
-  console.log("pos> ", window.scrollY);
-  console.log("hei> ", window.innerHeight);
-}
-
-onMounted(() => {
-  console.log("Window", window)
-  window.addEventListener("scroll", onScroll)
-})
 </script>
 
 <template>
@@ -18,7 +7,7 @@ onMounted(() => {
     <div
       class="pattern select-none border-b-4 border-space-black h-full flex items-center justify-center"
     >
-    <IconLogo class="animate-sine h-3/4 max-w-[75%]" />
+      <IconLogo class="animate-sine h-3/4 max-w-[75%]" />
     </div>
   </header>
 </template>
