@@ -110,9 +110,9 @@ import XDIcon from "@/components/icons/Skills/XD.vue";
       <ContactsCard
         window-name="Телега"
         title="Telegram"
-        url-value="https://t.me/Dorotos_Buisness"
-        clipboard-value="@Dorotos_Buisness"
-        display-value="@Dorotos_Buisness"
+        url-value="https://t.me/Dorotos_Space"
+        clipboard-value="@Dorotos_Space"
+        display-value="@Dorotos_Space"
         color="blue"
         have-link
         have-clipboard

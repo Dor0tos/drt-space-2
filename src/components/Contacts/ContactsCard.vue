@@ -66,7 +66,7 @@ async function copyToClipboard() {
       <div
         class="font-play px-5 py-2 rounded-md w-fit bg-opacity-25 bg-space-dark flex flex-row gap-2 justify-center items-center"
       >
-        <div>{{ displayValue ? displayValue : value }}</div>
+        <div>{{ displayValue }}</div>
       </div>
       <div class="flex gap-2">
         <button

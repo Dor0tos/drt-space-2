@@ -26,21 +26,21 @@ function goToURL(url: string) {
 
 <template>
   <section
-    class="w-full text-xs md:text-lg xl:text-xl h-fit min-h-[320px] sm:h-[460px] bg-space-main sm:rounded-[15px] sm:border-x-4 border-y-4 border-space-black flex flex-col font-play sm:shadow-comic mx-auto"
+    class="w-full text-xs md:text-lg xl:text-xl min-h-[320px] sm:h-[460px] bg-space-main sm:rounded-[15px] sm:border-x-4 border-y-4 border-space-black flex flex-col font-play sm:shadow-comic mx-auto"
   >
     <header
       class="py-2 px-8 border-b-[3px] border-space-black items-center flex flex-row font-semibold flex-shrink-0"
     >
       Создание {{ title }}
     </header>
-    <main class="p-8 items-center flex flex-row gap-4 grow">
+    <main class="p-4 sm:p-8 items-center flex flex-row gap-4 grow">
       <aside
         class="h-full w-[100px] sm:w-[170px] flex-shrink-0 rounded-[10px] border-[3px] border-space-black flex items-center justify-center"
         :class="thumbColor"
       >
-        <img class="h-full object-center object-cover" :src="img_url" />
+        <img class="h-full w-full object-center object-cover" :src="img_url" />
       </aside>
-      <section class="h-full grow flex flex-col place-content-between">
+      <section class="h-full grow flex flex-col place-content-between gap-5">
         <section>
           <h3 class="font-sofia text-xl sm:text-3xl font-black">{{ title }}</h3>
           <h4 class="w-full">{{ description }}</h4>
