@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import { onMounted, ref } from "vue";
-import { supabase } from "../libs/supabaseClient";
+import { supabase } from "../../libs/supabaseClient";
 import ProjectCard from "./ProjectCard.vue";
 
 const projects = ref([] as any);
@@ -29,6 +29,7 @@ onMounted(() => {
       :state="project.state"
       :skills="project.skills"
       :img_url="project.preview_image"
+      :external-links="project.external"
     />
   </main>
 </template>

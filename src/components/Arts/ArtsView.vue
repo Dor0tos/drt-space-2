@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import { onMounted, ref } from "vue";
-import { supabase } from "../libs/supabaseClient";
+import { supabase } from "../../libs/supabaseClient";
 import ImageCard from "./ImageCard.vue";
 
 const arts = ref([] as any);
